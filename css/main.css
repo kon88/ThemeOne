@@ -1,0 +1,196 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,700,800|Roboto+Slab:400,100,300,700);
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css);
+* {
+  box-sizing: border-box; }
+
+body {
+  padding-top: 50px;
+  font-family: "Roboto Slab", sans-serif;
+  font-weight: 300; }
+
+li {
+  list-style: none; }
+
+a {
+  text-decoration: none; }
+
+.navbar {
+  border-radius: 0;
+  border: 0;
+  background: skyblue; }
+  .navbar .collapse .pull-right a:hover {
+    color: #515151; }
+
+header {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  height: 100vh;
+  background: #515151;
+  color: #fff; }
+  header .header-content {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; }
+
+.section1 {
+  margin: 100px auto 0px auto; }
+
+.sec1b {
+  text-align: center;
+  font-size: 1.6em; }
+
+.sec1a .image-fluid {
+  max-width: 100%;
+  height: auto; }
+
+.gallery {
+  margin-top: 100px; }
+
+.gallery-cell {
+  width: 100%;
+  background: #8C8;
+  color: #fff;
+  height: 480px;
+  text-align: center;
+  line-height: 480px;
+  font-size: 2rem;
+  font-family: sans-serif; }
+
+a {
+  color: #fff;
+  text-declaration: none; }
+
+/* Fade CSS */
+.flickity-slider {
+  transform: none !important; }
+
+.gallery-cell {
+  left: 0 !important;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  z-index: -1; }
+
+.gallery-cell.is-selected {
+  opacity: 1;
+  z-index: 0; }
+
+.section2 {
+  margin: 120px auto 0px auto; }
+
+.sec2a {
+  text-align: center;
+  font-size: 1.6em; }
+
+/* -------Flickity 1-------*/
+/*--------Card Section-------*/
+.cards-section {
+  margin: 100px auto 0px auto;
+  max-width: 1020px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; }
+  .cards-section .card {
+    max-width: 321px;
+    background: skyblue; }
+
+/*-------Flickity Slider 2-------*/
+.slider2 {
+  margin-top: 100px; }
+
+.carousel-cell {
+  width: 33%;
+  height: 300px;
+  margin-right: 10px;
+  background: skyblue;
+  border-radius: 5px;
+  padding: 40px 15px 0px 15px;
+  transition: background .2s; }
+
+/* cell number */
+.carousel-cell:before {
+  display: block;
+  text-align: center;
+  color: white; }
+
+/*--------Contact---------*/
+.form-section {
+  margin-top: 120px;
+  background: #515151;
+  color: #fff; }
+  .form-section h1 {
+    padding: 60px 0; }
+  .form-section .contact {
+    width: 100%;
+    margin: 0 auto; }
+
+.form-section .contact .btn {
+  margin-bottom: 80px; }
+
+.form-section .contact .map iframe {
+  padding-top: 38px; }
+
+/*---------Footer---------*/
+footer {
+  margin-top: 0px;
+  background: skyblue;
+  min-height: 100px; }
+  footer section {
+    padding-top: 40px; }
+  footer li {
+    display: inline-block;
+    font-size: 1.6em; }
+  footer li:first-child {
+    margin-right: 12px; }
+
+@media (max-width: 500px) {
+  header .header-content {
+    width: 95%; }
+  .section1 .sec1a img {
+    max-width: 320px;
+    max-height: 208px; }
+  .section1 .sec1b {
+    font-size: 1em; }
+    .section1 .sec1b h1 {
+      font-size: 1.8em; }
+  .section2 .sec2b img {
+    max-width: 320px;
+    max-height: 208px; }
+  .section2 .sec2a {
+    font-size: 1em; }
+    .section2 .sec2a h1 {
+      font-size: 1.8em; } }
+
+@media (max-width: 767px) {
+  .form-section .contact .map iframe {
+    padding: 0px 0px 40px 0px; } }
+
+@media (max-width: 991px) {
+  .section1 .sec1b {
+    padding-top: 30px; }
+  .section2 .sec2a {
+    padding-bottom: 30px; }
+  .form-section .contact .map iframe {
+    max-width: 340px;
+    max-height: 240px; } }
+
+@media (max-width: 1200px) {
+  .section1 .sec1a img {
+    width: 400px;
+    height: 260px; }
+  .sec1b {
+    font-size: 1.2em; } }
+
+@media (max-width: 1200px) {
+  .section2 .sec2b img {
+    width: 400px;
+    height: 260px; }
+  .sec2a {
+    font-size: 1.2em; } }
